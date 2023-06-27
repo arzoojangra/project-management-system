@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineDelete } from "react-icons/ai";
+import { CgDetailsMore } from "react-icons/cg";
 import { BiEditAlt } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -104,7 +105,10 @@ function Home(props) {
                   <div className="d-flex justify-content-between align-items-center">
                     <h5 className="fw-bold">{project.Name}</h5>
                     <Link to={`/projects/${project.ProjID}`}>
-                      <button className="btn btn-light">View</button>
+                      <button className="btn btn-light align-items-center">
+                        <CgDetailsMore className="icons" />
+                        View
+                      </button>
                     </Link>
                   </div>
                   <p className="fs-6 mt-2 mb-0">{project.Description}</p>
@@ -113,6 +117,8 @@ function Home(props) {
                     <b
                       style={{
                         color: setColor(project.Status),
+                        marginLeft: "2px",
+                        alignItems: "center",
                       }}
                     >
                       {project.Status}

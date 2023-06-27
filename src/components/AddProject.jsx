@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
+import { RiAddCircleLine } from "react-icons/ri";
 import axios from "axios";
 
 function AddProject(props) {
@@ -145,6 +146,7 @@ function AddProject(props) {
                 </button>
               ) : (
                 <button type="submit" className="btn btn-success">
+                  <RiAddCircleLine className="icons" />
                   Add Project
                 </button>
               )}

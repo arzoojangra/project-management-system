@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loader from "../components/Loader";
 import { AiOutlineDelete } from "react-icons/ai";
+import { MdOutlineUpdate } from "react-icons/md";
+import { RiArrowGoBackLine } from "react-icons/ri";
 
 function ClientDetails(props) {
   const [client, setClient] = useState([]);
@@ -105,6 +107,7 @@ function ClientDetails(props) {
         <div className="col-md-12 p-4">
           <Link to="/">
             <button type="submit" className="btn btn-light float-end col-2 ">
+              <RiArrowGoBackLine className="icons" />
               Back
             </button>
           </Link>
@@ -146,6 +149,7 @@ function ClientDetails(props) {
             </div>
 
             <button type="submit" className="btn btn-secondary my-3">
+              <MdOutlineUpdate className="icons" />
               Update
             </button>
 

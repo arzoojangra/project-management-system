@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { RiAddCircleLine } from "react-icons/ri";
 
 function AddClient(props) {
   const [clientData, setClientData] = useState({});
@@ -94,6 +95,7 @@ function AddClient(props) {
                 </button>
               ) : (
                 <button type="submit" className="btn btn-primary">
+                  <RiAddCircleLine className="icons" />
                   Add Client
                 </button>
               )}

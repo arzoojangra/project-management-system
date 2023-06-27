@@ -1,7 +1,7 @@
 import React from "react";
 import AddClient from "./AddClient";
 import AddProject from "./AddProject";
-import { BsFillPersonFill } from "react-icons/bs";
+import { PiUserCirclePlusFill } from "react-icons/pi";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -31,7 +31,7 @@ function Header(props) {
                   data-bs-toggle="modal"
                   data-bs-target="#addClient"
                 >
-                  <BsFillPersonFill className="icons" />
+                  <PiUserCirclePlusFill className="icons" />
                   Add Client
                 </button>
                 <button

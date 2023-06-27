@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IoIosContact } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOutlineUpdate } from "react-icons/md";
 import { HiPhone } from "react-icons/hi";
 import { AiOutlineDelete, AiFillCaretDown } from "react-icons/ai";
+import { RiArrowGoBackLine } from "react-icons/ri";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import Loader from "../components/Loader";
@@ -171,8 +172,8 @@ function ProjectDetails(props) {
       <div className="row">
         <div className="col-md-12 p-4">
           <Link to="/">
-            <button type="submit" className="btn btn-light float-end col-2 ">
-              Back
+            <button type="submit" className="btn btn-light float-end col-2">
+              <RiArrowGoBackLine className="icons" /> Back
             </button>
           </Link>
 
@@ -280,7 +281,7 @@ function ProjectDetails(props) {
             </div>
 
             <button type="submit" className="btn btn-secondary my-3">
-              Update
+              <MdOutlineUpdate className="icons" /> Update
             </button>
 
             <br />
